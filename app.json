@@ -22,7 +22,7 @@
         "CHANNEL": {
             "description": "ضع معرف قناتك اذا اردت غير ذلك اتركها ",
             "required": false,
-            "value": "JMTHON"
+            "value": "F0FBB"
         },
         "BOT_USERNAME": {
             "description": "هنا ضع معرف البوت بدون @",
