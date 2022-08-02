@@ -1,12 +1,12 @@
 {
-    "name": "Telethon Music Bot",
+    "name": "Cold Music bot ",
     "description": "Music allow you to stream music trought the telegram voice chat feature Based on Telethon.",
     "keywords": ["JMTHON", "JMTHON-MUSIC", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
-    "repository": "https://github.com/R0R77/Telethon-Music",
+    "repository": "https:https://github.com/ammar54hsh/sagadbakk",
   "stack": "container",
     "env": {
         "STRING_SESSION": {
-            "description": "يرجى وضع كود سيشن تيليثون للحساب المساعد هنا ",
+            "description": "يرجى وضع كود سيشن للحساب المساعد هنا ",
             "required": true
         },
         "HEROKU_MODE": {
