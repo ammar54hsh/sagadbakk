@@ -1,6 +1,6 @@
 from telethon import events, Button
-from R0R77 import R0R77
-from R0R77.status import *
+from F0FBB import F0FBB
+from F0FBB.status import *
 import time
 
 PR_HELP = """
@@ -14,7 +14,7 @@ PR_HELP = """
 
 """
 
-@R0R77.on(events.NewMessage(pattern=r"^[?!]تنظيف"))
+@F0FBB.on(events.NewMessage(pattern=r"^[?!]تنظيف"))
 @is_admin
 async def purge_messages(event, perm):
     if not perm.delete_messages:
@@ -44,7 +44,7 @@ async def purge_messages(event, perm):
 
 
 
-@R0R77.on(events.NewMessage(pattern="^[!?/]مسح$"))
+@F0FBB.on(events.NewMessage(pattern="^[!?/]مسح$"))
 @is_admin
 async def delete_messages(event, perm):
     if not perm.delete_messages:
@@ -58,6 +58,6 @@ async def delete_messages(event, perm):
     await msg.delete()
     await event.delete()
 
-@R0R77.on(events.callbackquery.CallbackQuery(data="purges"))
+@F0FBB.on(events.callbackquery.CallbackQuery(data="purges"))
 async def _(event):
     await event.edit(PR_HELP, buttons=[[Button.inline("رجوع", data="help")]])
