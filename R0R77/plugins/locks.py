@@ -1,6 +1,6 @@
 from telethon import events, Button, types
-from R0R77 import R0R77
-from R0R77.status import *
+from F0FBB import F0FBB
+from F0FBB.status import *
 
 LOCKS_HELP = """
 **هذه هي اوامر القفل و الفتح  في الدردشة**
@@ -15,7 +15,7 @@ LOCKS_HELP = """
 لعرض الصلاحيات التي يمكنك قفلها
 """
 
-@R0R77.on(events.NewMessage(pattern="^[!?/]قفل ?(.*)"))
+@F0FBB.on(events.NewMessage(pattern="^[!?/]قفل ?(.*)"))
 @is_admin
 async def lock(event, perm):
     if not perm.change_info:
